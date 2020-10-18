@@ -1,0 +1,26 @@
+{
+  "name": "liberry-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abstrkt10nLair/liberry-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abstrkt10nLair/liberry-server/issues"
+  },
+  "homepage": "https://github.com/abstrkt10nLair/liberry-server#readme",
+  "dependencies": {
+    "apollo-server": "^2.18.2",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.9",
+    "nodemon": "^2.0.5"
+  }
+}
