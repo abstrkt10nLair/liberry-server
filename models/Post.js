@@ -16,11 +16,11 @@ const postSchema = new Schema({
       username: String,
       createdAt: String
     }
-  ]/*,
+  ],
   user: {
     type: Schema.Types.ObjectID,
     ref: 'users'
-  }*/
+  }
 })
 
 module.exports = model('Post', postSchema)

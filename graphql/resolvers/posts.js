@@ -1,4 +1,5 @@
-const Post = require('../../models/post')
+const Post = require('../../models/Post')
+const { Mutation } = require('./users')
 
 module.exports = {
   Query: {
@@ -9,6 +10,23 @@ module.exports = {
       } catch (err) {
         throw new Error(err)
       }
+    },
+    async getPost(_, { postId }) {
+      try {
+        const post = await Post.findById(postId)
+        if (post) {
+          return post
+        } else {
+          throw new Error('Post not found')
+        }
+      } catch (err) {
+        throw new Error(err)
+      }
+    }
+  },
+  Mutation: {
+    async createPost(_, { body }, context) {
+      // TODO
     }
   }
 }
